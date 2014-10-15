@@ -1,0 +1,146 @@
+<row Id="4" 
+PostTypeId="1" 
+AcceptedAnswerId="7" 
+CreationDate="2008-07-31T21:42:52.667" 
+Score="214" 
+ViewCount="12501" 
+Body="&lt;p&gt;I'm new to C# and I want to use a track-bar to change a form's opacity.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;This is my code:&lt;/p&gt;&#xA;&#xA;&lt;pre&gt;&lt;code&gt;decimal trans = trackBar1.Value / 5000;&#xA;this.Opacity = trans;&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;When I try to build it, I get this error:&lt;/p&gt;&#xA;&#xA;&lt;blockquote&gt;&#xA;  &lt;p&gt;Cannot implicitly convert type 'decimal' to 'double'.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;I tried making &lt;code&gt;trans&lt;/code&gt; a &lt;code&gt;double&lt;/code&gt;, but then the control doesn't work. This code has worked fine for me in VB.NET in the past. &lt;/p&gt;&#xA;" 
+OwnerUserId="8" 
+LastEditorUserId="168868" 
+LastEditorDisplayName="Rich B" 
+LastEditDate="2013-05-29T05:08:44.313" 
+LastActivityDate="2013-06-01T01:01:00.713" 
+Title="When setting a form's opacity should I use a decimal or double?" 
+Tags="&lt;c#&gt;&lt;winforms&gt;&lt;forms&gt;&lt;type-conversion&gt;&lt;opacity&gt;" 
+AnswerCount="13" 
+CommentCount="33" 
+FavoriteCount="22" 
+CommunityOwnedDate="2012-10-31T16:42:47.213" />
+
+<row Id="8" 
+PostTypeId="1" 
+AcceptedAnswerId="162" 
+CreationDate="2008-07-31T23:33:19.290" 
+Score="31" 
+ViewCount="2270" 
+Body="&lt;p&gt;Are there any conversion tools for porting from &lt;strong&gt;Visual J#&lt;/strong&gt; code to &lt;strong&gt;C#&lt;/strong&gt;?&lt;/p&gt;&#xA;" 
+OwnerUserId="9" 
+LastEditorUserId="464552" 
+LastEditorDisplayName="Rich B" 
+LastEditDate="2012-11-12T17:24:03.030" 
+LastActivityDate="2013-03-29T06:32:49.430" 
+Title="Tool for Converting Visual J# code to C#?" 
+Tags="&lt;c#&gt;&lt;code-generation&gt;&lt;j#&gt;&lt;visualj#&gt;" 
+AnswerCount="3" 
+CommentCount="3" 
+FavoriteCount="1" />
+  
+<row Id="11" 
+PostTypeId="1" 
+AcceptedAnswerId="1248" 
+CreationDate="2008-07-31T23:55:37.967" 
+Score="595" 
+ViewCount="54814" 
+Body="&lt;p&gt;Given a specific DateTime value, how do I display relative time, like&lt;/p&gt;&#xA;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2 hours ago&lt;/li&gt;&#xA;&lt;li&gt;3 days ago&lt;/li&gt;&#xA;&lt;li&gt;a month ago&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;p&gt;etcetera?&lt;/p&gt;&#xA;" 
+OwnerUserId="1" 
+LastEditorUserId="1350209" 
+LastEditorDisplayName="Rich B" 
+LastEditDate="2013-04-24T02:44:59.450" 
+LastActivityDate="2013-04-24T02:44:59.450" 
+Title="How do I calculate relative time?" 
+Tags="&lt;c#&gt;" 
+AnswerCount="27" 
+CommentCount="10" 
+FavoriteCount="360" 
+CommunityOwnedDate="2009-09-04T13:15:59.820" />
+
+<row Id="99" PostTypeId="2" ParentId="88" CreationDate="2008-08-01T14:55:08.477" Score="2" Body="&lt;blockquote&gt;&#xD;&#xA;  &lt;p&gt;The actual resolution of gettimeofday() depends on the hardware architecture. Intel processors as well as SPARC machines offer high resolution timers that measure microseconds. Other hardware architectures fall back to the system’s timer, which is typically set to 100 Hz. In such cases, the time resolution will be less accurate. &lt;/p&gt;&#xD;&#xA;&lt;/blockquote&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;I obtained this answer from &lt;a href=&quot;http://www.informit.com/guides/content.aspx?g=cplusplus&amp;amp;seqNum=272&quot; rel=&quot;nofollow&quot;&gt;High Resolution Time Measurement and Timers, Part I&lt;/a&gt;&lt;/p&gt;" OwnerUserId="25" LastActivityDate="2008-08-01T14:55
+ <row Id="532" PostTypeId="2" ParentId="265" CreationDate="2008-08-02T18:30:34.673" Score="0" Body="&lt;p&gt;Maven helps quite a lot with this problem when I'm coding java. We commit the pom.xml to the scs and the maven repository contains all our dependencies.&#xD;&#xA;For me that seems like a nice way to do it.&lt;/p&gt;" OwnerUserId="86" LastActivityDate="2008-08-02T18:30:34.673" /> 
+CREATE  TABLE IF NOT EXISTS `Test`.`sof_posts` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `post_id` INT NULL ,
+  `post_type_id` INT NULL ,
+  `parent_id` INT NULL ,
+  `accepted_answer_id` INT NULL ,
+  `creation_date` DATETIME NULL ,
+  `score` INT NULL ,
+  `view_count` INT NULL ,
+  `body` LONGTEXT NULL ,
+  `owner_user_id` INT NOT NULL ,
+  `title` VARCHAR(500) NULL ,
+  `tags` VARCHAR(500) NULL ,
+  `answer_count` INT NULL ,
+  `comment_count` INT NULL ,
+  `favourite_count` INT NULL ,
+  `body_annotation` LONGTEXT NULL ,
+  `title_annotation` LONGTEXT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_sof_posts_sof_users1` (`owner_user_id` ASC))
+ENGINE = InnoDB;
+
+CREATE  TABLE IF NOT EXISTS `Test`.`sof_badges` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `users_id` INT NOT NULL ,
+  `name` VARCHAR(40) NULL ,
+  `date` DATETIME NULL ,
+  `badge_id` INT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_sof_badges_sof_users` (`users_id` ASC) ,
+  CONSTRAINT `fk_sof_badges_sof_users`
+    FOREIGN KEY (`users_id`)
+    REFERENCES `Test`.`sof_users` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+
+CREATE  TABLE IF NOT EXISTS `Test`.`sof_votes` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `vote_id` INT NULL ,
+  `post_id` INT NULL ,
+  `vote_type_id` INT NULL ,
+  `creation_date` DATETIME NULL ,
+  `user_id` INT NULL ,
+  `bounty_amount` INT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_sof_votes_sof_posts1` (`post_id` ASC) ,
+  INDEX `fk_sof_votes_sof_users1` (`user_id` ASC) ,
+  CONSTRAINT `fk_sof_votes_sof_posts1`
+    FOREIGN KEY (`post_id` )
+    REFERENCES `Test`.`sof_posts` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_sof_votes_sof_users1`
+    FOREIGN KEY (`user_id` )
+    REFERENCES `Test`.`sof_users` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+
+CREATE  TABLE IF NOT EXISTS `Test`.`sof_comments` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `comment_id` INT NULL ,
+  `post_id` INT NULL ,
+  `score` INT NULL ,
+  `text` TEXT NULL ,
+  `creation_date` DATETIME NULL ,
+  `user_id` INT NULL ,
+  PRIMARY KEY (`id`) ,
+  INDEX `fk_sof_comments_sof_posts1` (`post_id` ASC) ,
+  INDEX `fk_sof_comments_sof_users1` (`user_id` ASC) ,
+  CONSTRAINT `fk_sof_comments_sof_posts1`
+    FOREIGN KEY (`post_id` )
+    REFERENCES `Test`.`sof_posts` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_sof_comments_sof_users1`
+    FOREIGN KEY (`user_id` )
+    REFERENCES `Test`.`sof_users` (`id` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<posts>
+
+</posts>

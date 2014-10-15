@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Consolas;\f2\fmodern\fcharset0 CourierNewPS-BoldMT;
+\f3\fmodern\fcharset0 CourierNewPSMT;\f4\fnil\fcharset0 Menlo-Regular;\f5\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red217\green217\blue217;\red234\green234\blue234;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Ubuntu server tips\
+\
+Login: ssh user@waisvm-ps1w07\
+\
+Update software: sudo apt-get upgrade\
+\
+Find zombie process: ps auwx | grep -i "zombie" or 
+\f1\fs28 \cf2 \cb3 ps aux | awk '\{ print $8 " " $2 \}' | grep -w Z
+\f0\fs24 \cf0 \cb1 \
+Kill a process: kill <PID> or kill -9 <pid>\
+\
+Change password: passwd root (or the user name)\
+\
+Become the root: sudo su -\
+\
+Database: Get the list of users and hosts: 
+\f2\b \cb4 mysql -u root -p --execute="SELECT User, Host FROM mysql.user"
+\f3\b0\fs26 \
+\
+Password reset: {\field{\*\fldinst{HYPERLINK "https://help.ubuntu.com/community/MysqlPasswordReset"}}{\fldrslt https://help.ubuntu.com/community/MysqlPasswordReset}}\
+\
+
+\f2\b Restart mysql server
+\f3\b0 : 
+\f4\fs22 \cb1 \CocoaLigature0 sudo /etc/init.d/mysql stop\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 sudo /etc/init.d/mysql start\
+sudo /etc/init.d/mysql status\
+\
+
+\f5\b Restart ubuntu server
+\f4\b0 : sudo reboot\
+\
+\
+{\field{\*\fldinst{HYPERLINK "http://wifo5-04.informatik.uni-mannheim.de/eurostat/snorql/"}}{\fldrslt http://wifo5-04.informatik.uni-mannheim.de/eurostat/snorql/}}\
+\
+SELECT DISTINCT ?property ?region ?GDP\
+WHERE \{\
+  \{ <http://wifo5-04.informatik.uni-mannheim.de/eurostat/resource/countries/United_Kingdom> <http://wifo5-04.informatik.uni-mannheim.de/eurostat/resource/countries/parentcountry> ?region . \}\
+ UNION\
+ \{ ?region ?property <http://wifo5-04.informatik.uni-mannheim.de/eurostat/resource/countries/United_Kingdom> .\}\
+\
+?region <http://wifo5-04.informatik.uni-mannheim.de/eurostat/resource/eurostat/GDP> ?GDP .\
+\
+\}}

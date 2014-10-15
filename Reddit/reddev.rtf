@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 Consolas;}
+{\colortbl;\red255\green255\blue255;\red251\green0\blue7;\red0\green0\blue233;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf0  \cf2 ==\cf0  psw [984e41a7@gateway/web/freenode/ip.152.78.65.167] has joined #reddit-dev\
+[14:12] <psw> Hello everyone. I am new to reddit development and API. I am having trouble getting started with PRAW.\
+[14:14] <psw> If anyone can point me to some tutorials and example codes, that'd be very helpful. I tried the getting started code in the PRAW documentation but it's not working for me.\
+[14:34] \cf2 ==\cf0  chuckpreslar [~chuckpres@rrcs-70-61-101-162.midsouth.biz.rr.com] has joined #reddit-dev\
+[14:41] <Damgaard> What's the problem?\
+[14:42] <Damgaard> Documentation is on RTD. {\field{\*\fldinst{HYPERLINK "https://praw.readthedocs.org/en/latest/"}}{\fldrslt \cf3 \ul \ulc3 https://praw.readthedocs.org/en/latest/}}\
+[14:46] <psw> Thank you, I am reading that documentation and trying a simple code to get subreddit submission\
+[14:47] <psw> but it's giving me AttributeError: 'module' object has no attribute 'Reddit'\
+[14:50] <Damgaard> ehhh.... that's very weird. Can you show me precisely what you're doing and a full traceback? Post it on bpaste.net or another paste site\
+[14:52] <Damgaard> btw, it's you that made a post on r/redditdev just now right?\
+[14:52] <reddit_announce> {\field{\*\fldinst{HYPERLINK "http://redd.it/1bzlmg"}}{\fldrslt \cf3 \ul \ulc3 http://redd.it/1bzlmg}} New post to /r/redditdev by sav3mys0ul: Problem with getting started with PRAW\
+[14:54] <psw> Thank you, here's the link: {\field{\*\fldinst{HYPERLINK "http://bpaste.net/show/weW431NlBmSptR20IMk2/"}}{\fldrslt \cf3 \ul \ulc3 http://bpaste.net/show/weW431NlBmSptR20IMk2/}}\
+[14:54] <psw> I also copied and pasted the example code at the end of the documentation page and I am getting the same AtrributeErro problem\
+[14:54] \cf2 ==\cf0  nyuszika7h [nyuszika7h@pdpc/supporter/active/nyuszika7h] has quit [Remote host closed the connection]\
+[14:56] <Damgaard> Okay. I think it might be an installation error. How did you install it?\
+[14:56] <psw> I did the pip install\
+[14:56] <Damgaard> wait, whats the name of your file?\
+[14:56] <psw> praw.py\
+[14:56] <Damgaard> try renaming it to example.py and run it again\
+[14:56] <psw> should i rename it?\
+[14:57] <Damgaard> Yeah, rename the file and run it agani\
+[14:58] <psw> I just tried it with different name and still the same error\
+[15:01] <Damgaard> Delete praw.pyc and try again\
+[15:01] <psw> ok\
+[15:02] <Damgaard> I was able to replicate your error by having a praw file or praw.pyc file. So I think that's your problem.\
+[15:07] <psw> Yes, I think it was\
+[15:07] <psw> now it's giving me import error\
+[15:07] <psw> i am going to uninstall the praw package and try to reinstall it\
+[15:08] <Damgaard> What is it? pip should install all of praws dependencies automatically\
+[15:09] <Damgaard> k. Also make sure you've removed all files / directories named praw or you will get namespace errors.\
+[15:10] <Damgaard> When I start with a\'a0\'a0new library, then I usually start in the interpreter. It's easier to go line by line and debug line by line.\
+[15:13] <psw> Ok\
+[15:18] <psw> It works now\
+[15:18] <psw> Thank you so much\
+[15:19] <psw> I really appreciate it\
+[15:19] <Damgaard> No problem. Btw, where did you find out about PRAW and why did you decide to ask here in #redditdev?\
+[15:22] <psw> I googled python packages for reddit and PRAW showed up and it has links to #redditdev, so I came here\
+[15:25] <psw> Do you know any good PRAW tutorials or examples?\
+[15:26] <Damgaard> Have you checked out the RTD link I gave you before? It has several tutorials written by a dashing young gentleman\
+[15:29] <Damgaard> I would really love if you could give me some feedback on them btw, are they easy to follow, is there anything you felt should be in the docs but weren't there or anything else really. Documentation is importment, but without feedback it's hard really get quality documentation.\
+[15:31] \cf2 ==\cf0  TheAuditor [~auditor@122.174.208.159] has quit [Quit: Leaving]\
+[15:32] <psw> You wrote the tutorials.... that is impressive.\
+[15:32] <psw> I'd love to give feedback as I use the tutorials and package more\
+[15:33] <psw> How should I do it? I don't see any feedback button on the page\
+[15:35] <Damgaard> Not all of it. The short examples and configuration page is before me. Or well, I've adjusted and updated some of it, but the authors areMellort. The\'a0\'a0original author of PRAW and bboe the current maintainer\
+[15:36] <Damgaard> Write it here, send an email to andreas.damgaard.pedersen AT gmail or write me a PM on reddit. i'm _daimon there\
+[15:36] <Damgaard> I mean _Daimon_ on reddit\
+[15:37] <psw> All of you have done a good work, as a beginner it helps to start with bunch of example and tutorials\
+[15:37] <psw> Thank you for all your work. I'll definitely email you or pm you with feedback\
+[15:38] <Damgaard> With one exception, and this is a pet peeve of mine, if there is a bug in the example code. Then there is a bug in the package and you should file a bug report on github.\
+[15:38] <psw> and if you don't mind, can I email you if I have some problem using the package?\
+[15:38] <Damgaard> Stuff like example code not working, dead links etc.\
+[15:38] <Damgaard> Excellent. Look forward to reading your feedback.\
+[15:39] <psw> Sure, I'll submit the bug report... I'm happy to do anything to help the community.\
+[15:39] <Damgaard> Sure, you're welcome. But honestly, r/redditdev or #redditdev will probably be faster\
+[15:40] <psw> Yes, sure. I'll come here first. Thank you once again for your help.\
+}

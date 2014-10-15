@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:itsrdf="http://www.w3.org/2005/11/its/rdf#" xmlns:str="http://nlp2rdf.lod2.eu/schema/string/"> 	
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_0_248"> 	  
+	<str:sourceString>&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; </str:sourceString> 	  
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_17_27"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_180_184"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_185_191"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_66_72"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_238_243"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_95_99"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_43_50"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_141_148"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_221_227"></str:subString>
+	<str:subString rdf:resource="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_214_220"></str:subString> 	  
+
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type> 	  
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/Document"></rdf:type> 	
+</rdf:Description> 
+	
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_185_191">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/GNU_Compiler_Collection"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+	</rdf:Description>
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_180_184">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Load_%28album%29"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_66_72">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Malloc"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_214_220">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Invocation"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_221_227">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Malloc"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_17_27">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Recursion"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_238_243">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Gilad_Shalit"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_95_99">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Note"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_43_50">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Symbol"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+</rdf:Description>
+
+<rdf:Description rdf:about="http://spotlight.dbpedia.org/rest/document/?text=&lt;p&gt;Watch out for recursions with backtrace_symbols(), which calls malloc itself. &lt;/p&gt;  &lt;p&gt;Also note that at the first use of backtrace() and friends the dynamic linker will try to load libgcc, which will yet again invoke malloc. &lt;/p&gt;  &lt;p&gt;Gilad&lt;/p&gt; #offset_141_148">             
+	<itsrdf:disambigIdentRef rdf:resource="http://dbpedia.org/resource/Religious_Society_of_Friends"></itsrdf:disambigIdentRef>             
+	<rdf:type rdf:resource="http://nlp2rdf.lod2.eu/schema/string/OffsetBasedString"></rdf:type>           
+</rdf:Description>       
+
+</rdf:RDF>

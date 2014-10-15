@@ -1,0 +1,156 @@
+Sample StackOverflow Questions and Answers data
+
+	Schema:
+	   - Id 
+       - PostTypeId
+          - 1: Question
+          - 2: Answer
+       - ParentID (only present if PostTypeId is 2)
+       - AcceptedAnswerId (only present if PostTypeId is 1)
+       - CreationDate 
+       - Score 
+       - ViewCount
+       - Body 
+       - OwnerUserId
+       - LastEditorUserId 
+       - LastEditorDisplayName="Jeff Atwood" 
+       - LastEditDate="2009-03-05T22:28:34.823" 
+       - LastActivityDate="2009-03-11T12:51:01.480" 
+       - CommunityOwnedDate="2009-03-11T12:51:01.480" 
+       - ClosedDate="2009-03-11T12:51:01.480" 
+       - Title= 
+       - Tags= 
+       - AnswerCount 
+       - CommentCount 
+       - FavoriteCount
+       
+    Example data: 
+
+		Id="3430" PostTypeId="2" ParentId="3376" CreationDate="2008-08-06T14:11:16.690" Score="1" ViewCount="" Body="&lt;p&gt;Another vote for UltraEdit&lt;/p&gt;" OwnerUserId="383" LastActivityDate="2008-08-06T14:11:16.690" CommunityOwnedDate="2008-09-21T21:28:49.293"
+		Id="3431" PostTypeId="2" ParentId="3305" CreationDate="2008-08-06T14:11:23.710" Score="0" ViewCount="" Body="&lt;p&gt;I've used gate.com for a while, and while they were flawless with their uptime, I did want to switch to a unix plan, and it took FOREVER to get done, so i left.  But besides that, they rocked.&lt;/p&gt;" OwnerUserId="514" LastActivityDate="2008-08-06T14:11:23.710" CommunityOwnedDate="2011-03-28T17:16:51.417"
+		Id="3432" PostTypeId="1" AcceptedAnswerId="3466" CreationDate="2008-08-06T14:12:09.903" Score="24" ViewCount="15688" Body="&lt;p&gt;I know that you can insert multiple rows at once, is there a way to update multiple rows at once (as in, in one query) in MySQL?&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;Edit:&#xD;&#xA;For example I have the following&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;pre&gt;&lt;code&gt;Name   id  Col1  Col2&lt;br&gt;Row1   1    6     1&lt;br&gt;Row2   2    2     3&lt;br&gt;Row3   3    9     5&lt;br&gt;Row4   4    16    8&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;I want to combine all the following Updates into one query&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;pre&gt;&lt;code&gt;UPDATE table SET Col1 = 1 WHERE id = 1;&lt;br&gt;UPDATE table SET Col1 = 2 WHERE id = 2;&lt;br&gt;UPDATE table SET Col2 = 3 WHERE id = 3;&lt;br&gt;UPDATE table SET Col1 = 10 WHERE id = 4;&lt;br&gt;UPDATE table SET Col2 = 12 WHERE id = 4;&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;" OwnerUserId="15" LastEditorUserId="18986" LastEditorDisplayName="Teifion" LastEditDate="2009-11-19T14:20:56.477" LastActivityDate="2012-01-26T09:49:45.317" Title="Multiple Updates in MySQL" Tags="&lt;query&gt;&lt;mysql&gt;&lt;update&gt;" AnswerCount="9" FavoriteCount="13"
+		Id="3434" PostTypeId="2" ParentId="3376" CreationDate="2008-08-06T14:12:48.683" Score="1" ViewCount="" Body="&lt;ol&gt;&#xD;&#xA;&lt;li&gt;FireFox&lt;/li&gt;&#xD;&#xA;&lt;li&gt;IDE (either ZEND or PHPDesigner)&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Apache&lt;/li&gt;&#xD;&#xA;&lt;li&gt;PHP Manual&lt;/li&gt;&#xD;&#xA;&lt;li&gt;iTunes&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Caffeine&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Caffeine&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Caffeine&lt;/li&gt;&#xD;&#xA;&lt;/ol&gt;" OwnerUserId="115" LastActivityDate="2008-08-06T14:12:48.683" CommunityOwnedDate="2008-09-21T21:28:49.293"
+		Id="3437" PostTypeId="1" AcceptedAnswerId="20612" CreationDate="2008-08-06T14:14:29.383" Score="10" ViewCount="7920" Body="&lt;p&gt;We recently discovered that the Google Maps API does not play nicely with SSL.  Fair enough, but what are some options for overcoming this that others have used effectively?&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;blockquote&gt;&#xD;&#xA;  &lt;p&gt;&lt;a href=&quot;http://code.google.com/support/bin/answer.py?answer=65301&amp;amp;topic=10945&quot; rel=&quot;nofollow&quot;&gt;Will the Maps API work over SSL (HTTPS)?&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;  &#xD;&#xA;  &lt;p&gt;At this time, the Maps API is not&#xD;&#xA;  available over a secure (SSL)&#xD;&#xA;  connection. If you are running the&#xD;&#xA;  Maps API on a secure site, the browser&#xD;&#xA;  may warn the user about non-secure&#xD;&#xA;  objects on the screen.&lt;/p&gt;&#xD;&#xA;&lt;/blockquote&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;We have considered the following options&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;ol&gt;&#xD;&#xA;&lt;li&gt;Splitting the page so that credit card collection (the requirement for SSL) is not on the same page as the Google Map.&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Switching to another map provider, such as Virtual Earth.  Rumor has it that they support SSL.&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Playing tricks with IFRAMEs.  Sounds kludgy.&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Proxying the calls to Google.  Sounds like a lot of overhead.&lt;/li&gt;&#xD;&#xA;&lt;/ol&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;Are there other options, or does anyone have insight into the options that we have considered?&lt;/p&gt;" OwnerUserId="308" LastEditorUserId="816008" LastEditorDisplayName="" LastEditDate="2012-02-19T12:20:12.870" LastActivityDate="2012-02-19T12:20:12.870" Title="Options for Google Maps over SSL" Tags="&lt;google-maps&gt;&lt;iframe&gt;&lt;ssl&gt;&lt;https&gt;" AnswerCount="6" CommentCount="1" FavoriteCount="2"
+		Id="3439" PostTypeId="2" ParentId="3432" CreationDate="2008-08-06T14:14:33.737" Score="1" ViewCount="" Body="&lt;pre&gt;&lt;code&gt;UPDATE table1, table2 SET table1.col1='value', table2.col1='value' WHERE table1.col3='567' AND table2.col6='567'&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;p&gt;This should work for ya.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;There is a reference in &lt;a href=&quot;http://dev.mysql.com/doc/refman/5.0/en/update.html&quot; rel=&quot;nofollow&quot;&gt;the MySQL manual&lt;/a&gt; for multiple tables.&lt;/p&gt;&#xA;" OwnerUserId="115" LastEditorUserId="1288" LastEditorDisplayName="" LastEditDate="2010-06-24T23:56:42.373" LastActivityDate="2010-06-24T23:56:42.373"
+		Id="3440" PostTypeId="2" ParentId="3432" CreationDate="2008-08-06T14:14:44.157" Score="0" ViewCount="" Body="&lt;p&gt;I'm not sure I understand. When you want to update multiple rows, do you want to update them all with the same value? in that case:&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;pre&gt;&lt;code&gt;UPDATE mytable SET valueField = 'NewValue' WHERE idField IN (1,3,5,65,1584,1251)&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;or did you want to set multiple rows to different values?&lt;/p&gt;" OwnerUserId="91" LastActivityDate="2008-08-06T14:14:44.157"
+		Id="3441" PostTypeId="2" ParentId="3408" CreationDate="2008-08-06T14:15:34.000" Score="5" ViewCount="" Body="&lt;p&gt;&lt;a href=&quot;http://e-texteditor.com&quot; rel=&quot;nofollow&quot;&gt;e-texteditor&lt;/a&gt; seems to be growing as the editor of choice for rails development on ruby. Too bad it isn't free.&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;&lt;p&gt;Aside from that, the &lt;a href=&quot;http://wiki.rubyonrails.org/rails/pages/RailsOnWindows&quot; rel=&quot;nofollow&quot;&gt;RailsOnWindows&lt;/a&gt; guide works fine. And Sqlite is by far your best choice for development: &lt;a href=&quot;http://wiki.rubyonrails.org/rails/pages/HowtoUseSQLite&quot; rel=&quot;nofollow&quot;&gt;RailsWithSqlite&lt;/a&gt;&lt;/p&gt;" OwnerUserId="34" LastActivityDate="2008-08-06T14:15:34.000" CommentCount="1"
+		Id="3442" PostTypeId="2" ParentId="3376" CreationDate="2008-08-06T14:15:52.220" Score="14" ViewCount="" Body="&lt;P&gt;@Ishmaeel&lt;/P&gt;&#xD;&#xA;&lt;P&gt;Did you know the Sysinternals tools are available &quot;live&quot;? try typing the following at a (windows) command prompt : &lt;/P&gt;&#xD;&#xA;&lt;BLOCKQUOTE&gt;&#xD;&#xA;&lt;P&gt;dir \\live.sysinternals.com\tools &lt;/P&gt;&lt;/BLOCKQUOTE&gt;&#xD;&#xA;&lt;P&gt;You can then access the tools in the same way. Nice feature, I thought...&lt;/P&gt;&#xD;&#xA;&lt;P&gt;via &lt;A href=&quot;http://desigeek.com/weblog/amit/archive/2008/06/13/interesting-find-13.aspx&quot; rel=&quot;nofollow&quot;&gt;Amit Bahree&lt;/A&gt;&lt;/P&gt;" OwnerUserId="377" LastActivityDate="2008-08-06T14:15:52.220" CommunityOwnedDate="2008-09-21T21:28:49.293" CommentCount="2"
+		Id="3443" PostTypeId="2" ParentId="2214" CreationDate="2008-08-06T14:16:35.790" Score="3" ViewCount="" Body="&lt;p&gt;We use &lt;a href=&quot;http://www.mbunit.com/&quot; rel=&quot;nofollow&quot;&gt;MbUnit&lt;/a&gt; and &lt;a href=&quot;http://www.ayende.com/Blog/archive/2007/03/28/Rhino-Mocks-3.0-Released.aspx&quot; rel=&quot;nofollow&quot;&gt;Rihno Mocks&lt;/a&gt; and they prove to work very well together. When doing TDD you will almost certainly need to do some form of dependency injection, while this can be done manually, its worth looking at an IoC container such as &lt;a href=&quot;http://www.castleproject.org/container/index.html&quot; rel=&quot;nofollow&quot;&gt;Castle Windor&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;It well worth looking at John Paul Bodhood's screen casts to get you started. &lt;a href=&quot;http://blog.jpboodhoo.com/ScreencastAppliedTestDrivenDevelopmentForWebApplicationsPart3.aspx&quot; rel=&quot;nofollow&quot;&gt;JPB's Blog&lt;/a&gt;&lt;/p&gt;&#xA;" OwnerUserId="230" LastEditorUserId="230" LastEditorDisplayName="Dan" LastEditDate="2008-09-18T20:55:00.580" LastActivityDate="2008-09-18T20:55:00.580"
+		
+
+Sample StackOverflow Q/A comment  Data
+
+	Schema:
+	   
+	   - Id
+       - PostId 
+       - Score
+       - Text, e.g.: "@Stu Thompson: Seems possible to me - why not try it?" 
+       - CreationDate, e.g.:"2008-09-06T08:07:10.730" 
+       - UserId
+	
+	Example Data:
+	
+		Id="1" PostId="35314" Score="8" Text="not sure why this is getting downvoted -- it is correct! Double check it in your compiler if you don't believe him!" CreationDate="2008-09-06T08:07:10.730" UserId="1"
+		Id="2" PostId="35314" Score="5" Text="Yeah, I didn't believe it until I created a console app - but good lord!  Why would they give you the rope to hang yourself!  I hated that about VB.NET - the OrElse and AndAlso keywords!" CreationDate="2008-09-06T08:09:52.330" UserId="3"
+		Id="4" PostId="35195" Text="I don't see an accepted answer now, I wonder how that got unaccepted. Incidentally, I would have marked an accepted answer based on the answers available at the time. Also, accepted doesn't mean Best :)" CreationDate="2008-09-06T08:42:16.980" UserId="380"
+		Id="8" PostId="12755" Score="1" Text="It has to be said, pair programming is an excellent suggestion and is simply dismissed at many organisations at being a wasteful use of resources.  However if the coding standards are consistently poor, pairing a strong developer with one less so, is by far the single best way to improve standards." CreationDate="2008-09-06T11:51:50.207" UserId="4642"
+		Id="9" PostId="47239" Text="Jonathan: Wow!  Thank you for all of that, you did an amazing amount of work!" CreationDate="2008-09-06T12:26:30.060" UserId="4550"
+		Id="10" PostId="45651" Score="2" Text="It will help if you give some details of which database you are using as techniques vary." CreationDate="2008-09-06T13:38:23.647" UserId="242"
+		Id="12" PostId="47428" Score="2" Text="One of the things that make a url user-friendly is 'discover-ability', meaning you can take a guess at url's simply from the address bar. http://i.love.pets.com/search/cats+dogs could easily lead to http://i.love.pets.com/search/pug+puppies etc" CreationDate="2008-09-06T13:51:47.843" UserId="4642"
+		Id="14" PostId="47481" Text="I agree, both CodeRush and RefactorPro are visually impressive (most of which can be turned off BTW), but for navigating and refactoring Resharper is much better in my opinion of using both products." CreationDate="2008-09-06T14:15:46.897" UserId="4642"
+		Id="15" PostId="47373" Text="Just wanted to mention that this is an excellent solution if you consider the problem to be linear (i.e. treating `A1B2` as a single number). I still think the problem is multi-dimensional, but I guess we'll just have to wait for the author to clarify :)" CreationDate="2008-09-06T14:30:40.217" UserId="2495"
+		Id="16" PostId="47497" Text="Indeed, the only way to do this is get the server to generate your CSS file which can be done in many ways depending on which language you are using. HttpHandlers are common in C#.  You could use jQuery or the likes to add styling to every element with the class 'ourColur' and parametrise your JS" CreationDate="2008-09-06T14:42:35.303" UserId="4642"
+
+
+Sample StackOverflow Q/A Votes Data
+
+	Schema:
+	   - Id 
+       - PostId 
+       - VoteTypeId
+          - ` 1`: AcceptedByOriginator
+          - ` 2`: UpMod
+          - ` 3`: DownMod
+          - ` 4`: Offensive
+          - ` 5`: Favorite - if VoteTypeId = 5 UserId will be populated
+          - ` 6`: Close
+          - ` 7`: Reopen
+          - ` 8`: BountyStart
+          - ` 9`: BountyClose
+          - `10`: Deletion
+          - `11`: Undeletion
+          - `12`: Spam
+          - `13`: InformModerator
+       - CreationDate
+       - UserId (only for VoteTypeId 5)
+       - BountyAmount (only for VoteTypeId 9)
+       
+       
+    Example Data:
+    
+		Id="1" PostId="1" VoteTypeId="2" CreationDate="2008-07-31" />
+		Id="2" PostId="3" VoteTypeId="2" CreationDate="2008-07-31" />
+		Id="3" PostId="2" VoteTypeId="2" CreationDate="2008-07-31" />
+		Id="4" PostId="4" VoteTypeId="2" CreationDate="2008-07-31" />
+		Id="5" PostId="6" VoteTypeId="2" CreationDate="2008-07-31" />
+		Id="6" PostId="7" VoteTypeId="2" CreationDate="2008-07-31" />
+		Id="7" PostId="13" VoteTypeId="2" CreationDate="2008-08-01" />
+		Id="9" PostId="4" VoteTypeId="2" CreationDate="2008-08-01" />
+		Id="10" PostId="12" VoteTypeId="2" CreationDate="2008-08-01" />
+		Id="11" PostId="13" VoteTypeId="2" CreationDate="2008-08-01" />
+	
+
+Sample StackOverflow User Data
+
+	Schema:
+	   - Id 
+       - Reputation 
+       - CreationDate 
+       - DisplayName 
+       - EmailHash
+       - LastAccessDate 
+       - WebsiteUrl 
+       - Location
+       - Age 
+       - AboutMe 
+       - Views 
+       - UpVotes 
+       - DownVotes
+       
+       
+    Example Data:
+    
+    	Id="1" Reputation="20078" CreationDate="2008-07-31T14:22:31.287" DisplayName="Jeff Atwood" EmailHash="51d623f33f8b83095db84ff35e15dbe8" LastAccessDate="2012-03-31T00:29:55.270" WebsiteUrl="http://www.codinghorror.com/blog/" Location="El Cerrito, CA" Age="41" AboutMe="&lt;p&gt;&lt;a href=&quot;http://www.codinghorror.com/blog/archives/001169.html&quot; rel=&quot;nofollow&quot;&gt;Stack Overflow Valued Associate #00001&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Wondering how our software development process works? &lt;a href=&quot;http://www.youtube.com/watch?v=08xQLGWTSag&quot; rel=&quot;nofollow&quot;&gt;Take a look!&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Find me &lt;a href=&quot;http://twitter.com/codinghorror&quot; rel=&quot;nofollow&quot;&gt;on twitter&lt;/a&gt;, or &lt;a href=&quot;http://www.codinghorror.com/blog&quot; rel=&quot;nofollow&quot;&gt;read my blog&lt;/a&gt;. Don't say I didn't warn you &lt;em&gt;because I totally did&lt;/em&gt;.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;However, &lt;a href=&quot;http://www.codinghorror.com/blog/2012/02/farewell-stack-exchange.html&quot; rel=&quot;nofollow&quot;&gt;I no longer work at Stack Exchange, Inc&lt;/a&gt;. I'll miss you all. Well, &lt;em&gt;some&lt;/em&gt; of you, anyway. :)&lt;/p&gt;&#xA;" Views="41072" UpVotes="3005" DownVotes="1256"
+		Id="2" Reputation="1257" CreationDate="2008-07-31T14:22:31.287" DisplayName="Geoff Dalgas" EmailHash="b437f461b3fd27387c5d8ab47a293d35" LastAccessDate="2012-03-31T02:15:40.533" WebsiteUrl="http://stackoverflow.com" Location="Corvallis, OR" Age="34" AboutMe="&lt;p&gt;Developer on the StackOverflow team.  Find me on&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;a href=&quot;http://www.twitter.com/SuperDalgas&quot; rel=&quot;nofollow&quot;&gt;Twitter&lt;/a&gt;&#xA;&lt;br&gt;&lt;br&gt;&#xA;&lt;a href=&quot;http://blog.stackoverflow.com/2009/05/welcome-stack-overflow-valued-associate-00003/&quot;&gt;Stack Overflow Valued Associate #00003&lt;/a&gt;&lt;/p&gt;&#xA;" Views="7679" UpVotes="395" DownVotes="82"
+		Id="3" Reputation="4724" CreationDate="2008-07-31T14:22:31.287" DisplayName="Jarrod Dixon" EmailHash="2dfa19bf5dc5826c1fe54c2c049a1ff1" LastAccessDate="2012-03-30T20:29:40.940" WebsiteUrl="http://stackoverflow.com" Location="New York, NY" Age="33" AboutMe="&lt;p&gt;&lt;a href=&quot;http://blog.stackoverflow.com/2009/01/welcome-stack-overflow-valued-associate-00002/&quot;&gt;Developer on the Stack Overflow team&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Was dubbed &lt;strong&gt;SALTY SAILOR&lt;/strong&gt; by Jeff Atwood, as filth and flarn would oft-times fly when dealing with a particularly nasty bug!&lt;/p&gt;&#xA;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Twitter me: &lt;a href=&quot;http://twitter.com/jarrod_dixon&quot; rel=&quot;nofollow&quot;&gt;jarrod_dixon&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Email me: jarrod.m.dixon@gmail.com&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;" Views="8929" UpVotes="2942" DownVotes="54"
+		Id="4" Reputation="15724" CreationDate="2008-07-31T14:22:31.317" DisplayName="Joel Spolsky" EmailHash="d1129adecd8c4e2a22b50605d18e376d" LastAccessDate="2012-03-29T05:04:54.887" WebsiteUrl="http://www.joelonsoftware.com/" Location="New York, NY" AboutMe="&lt;p&gt;I am:&lt;/p&gt;&#xA;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;the co-founder and CEO of &lt;a href=&quot;http://stackexchange.com&quot;&gt;Stack Exchange&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;the co-founder of &lt;a href=&quot;http://www.fogcreek.com&quot; rel=&quot;nofollow&quot;&gt;Fog Creek Software&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;owner of Taco, the most famous Siberian Husky on the Upper West Side.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;p&gt;You can find me:&lt;/p&gt;&#xA;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;on Twitter as &lt;a href=&quot;http://twitter.com/spolsky&quot; rel=&quot;nofollow&quot;&gt;@spolsky&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;on my rarely-updated blog, &lt;a href=&quot;http://joelonsoftware.com&quot; rel=&quot;nofollow&quot;&gt;Joel on Software&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;" Views="32408" UpVotes="649" DownVotes="91"
+		Id="5" Reputation="19581" CreationDate="2008-07-31T14:22:31.317" DisplayName="Jon Galloway" EmailHash="1c494896dd56e0e27253156c28f1dfb9" LastAccessDate="2012-03-30T16:54:05.433" WebsiteUrl="http://weblogs.asp.net/jgalloway/" Location="San Diego, CA" Age="41" AboutMe="&lt;p&gt;Community program manager for ASP.NET at Microsoft. I've done a lot of work with ASP.NET and Silverlight, and I have an annoying habit of getting mixed up in open source projects.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Twitter: &lt;a href=&quot;http://www.twitter.com/jongalloway&quot; rel=&quot;nofollow&quot;&gt;@jongalloway&lt;/a&gt;&lt;br&gt;&#xA;Blog: &lt;a href=&quot;http://weblogs.asp.net/jgalloway/&quot; rel=&quot;nofollow&quot;&gt;Jon Galloway&lt;/a&gt;&lt;br&gt;&#xA;Podcast: &lt;a href=&quot;http://herdingcode.com&quot; rel=&quot;nofollow&quot;&gt;Herding Code&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;img src=&quot;http://codinghorror.typepad.com/.a/6a0120a85dcdae970b0128776ff992970c-pi&quot; /&gt;&lt;/p&gt;&#xA;" Views="2962" UpVotes="732" DownVotes="34"
+		Id="8" Reputation="738" CreationDate="2008-07-31T21:33:24.057" DisplayName="Eggs McLaren" EmailHash="c7ec7dec48168d2a7d792e2b0acc78d1" LastAccessDate="2012-01-29T07:47:14.243" AboutMe="&lt;p&gt;This is a puppet test account I use to validate &quot;regular user&quot; stuff on the site&lt;/p&gt;&#xD;&#xA;&lt;p&gt;-- &lt;a href=&quot;http://stackoverflow.com/users/1/jeff-atwood&quot; rel=&quot;nofollow&quot;&gt;Jeff Atwood&lt;/a&gt;" Views="1228" UpVotes="12" DownVotes="9"
+		Id="9" Reputation="4145" CreationDate="2008-07-31T21:35:26.517" DisplayName="Kevin Dente" EmailHash="23c1e2063688620b75b248e08c0d5c24" LastAccessDate="2012-03-28T21:57:05.287" WebsiteUrl="http://weblogs.asp.net/kdente" Location="Oakland, CA" Age="41" AboutMe="&lt;p&gt;Self employed software engineer, currently noodling around with Node.js&lt;/p&gt;&#xA;" Views="1056" UpVotes="25" DownVotes="4"
+		Id="10" Reputation="101" CreationDate="2008-07-31T21:57:06.240" DisplayName="Sneakers O'Toole" EmailHash="f82fc4a2bfc73434ac4899690926c8a0" LastAccessDate="2012-03-01T03:56:36.210" WebsiteUrl="http://www.youtube.com/watch?v=qrhNoljPtok" Location="Lakehead, CA" Age="33" AboutMe="I'm not takin' my sneakers off!&#xD;&#xA;&lt;br&gt;&lt;br&gt;&#xD;&#xA;Actually, &lt;b&gt;I'm a test account&lt;/b&gt;, used to help debug problems here on StackOverflow." Views="875" UpVotes="0" DownVotes="0"
+		
+		
+Sample StackOverflow Badges Data
+
+	Schema:
+	   - UserId, e.g.: "420"
+       - Name, e.g.: "Teacher" 
+       - Date, e.g.: "2008-09-15T08:55:03.923"
+
+
+	Example Data:
+	
+		Id="82946" UserId="3718" Name="Teacher" Date="2008-09-15T08:55:03.923"
+		Id="82947" UserId="994" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		Id="82949" UserId="3893" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		Id="82950" UserId="4591" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		Id="82951" UserId="5196" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		Id="82952" UserId="2635" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		Id="82953" UserId="1113" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		Id="82954" UserId="4182" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		Id="82955" UserId="164" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		Id="82956" UserId="652" Name="Teacher" Date="2008-09-15T08:55:03.957"
+		
+		
+		http://www.marcogoncalves.com/2011/03/mysql-split-column-string-into-rows/

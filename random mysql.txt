@@ -1,0 +1,62 @@
+MySql queries
+
+1. INSERT into Test.sof_questions 
+(post_id, accepted_answer_id, creation_date,score,view_count,body,owner_user_id,title,tags,answer_count, comment_count,favourite_count,body_annotation, title_annotation)
+SELECT post_id, accepted_answer_id, creation_date,score,view_count,body,owner_user_id,title,tags,answer_count, comment_count, favourite_count,body_annotation, title_annotation
+FROM Test.sof_posts WHERE post_type_id =1 and post_id>544688
+LIMIT 10;
+
+2. INSERT into Test.sof_answers 
+(post_id,parent_id,creation_date,score,body,owner_user_id,comment_count,body_annotation)
+SELECT post_id, parent_id,creation_date,score,body,owner_user_id,comment_count,body_annotation
+FROM Test.sof_posts WHERE post_type_id =2 and post_id>465925
+LIMIT 10000;
+
+3. SELECT * FROM Test.sof_posts where tags like 
+'%python%' or '%java%' or '%javascript%' or '%c#%' or '%php%' or '%android%' or '%jquery%' 
+or '%html%' or '%c++%' or '%mysql%' or '%ios%'
+LIMIT 1000;
+
+4. SELECT * FROM Test.sof_posts where tags like "%python%" and accepted_answer_id = 0
+LIMIT 1000;
+
+5. select * from Test.sof_posts where id > 3621000;
+
+6. CREATE  TABLE IF NOT EXISTS `Test`.`sof_answers` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `post_id` INT NULL ,
+  `parent_id` INT NULL ,
+  `creation_date` DATETIME NULL ,
+  `score` INT NULL ,
+  `body` LONGTEXT NULL ,
+  `title` VARCHAR(500) NULL ,
+  `owner_user_id` INT NOT NULL ,
+  `tags` VARCHAR(500) NULL ,
+  `comment_count` INT NULL ,
+  `body_annotation` LONGTEXT NULL ,
+  `title_annotation` LONGTEXT NULL ,
+  PRIMARY KEY (`id`) )
+ENGINE = InnoDB
+
+
+7. INSERT into Test.sof_answers 
+(post_id,parent_id,creation_date,score,body,owner_user_id,comment_count,body_annotation)
+SELECT post_id, parent_id,creation_date,score,body,owner_user_id,comment_count,body_annotation
+FROM Test.sof_posts WHERE post_type_id =1
+LIMIT 10;
+
+8. INSERT into Test.sof_questions 
+(post_id, accepted_answer_id, creation_date,score,view_count,body,owner_user_id,title,tags,answer_count, comment_count,favourite_count,body_annotation, title_annotation)
+SELECT post_id, accepted_answer_id, creation_date,score,view_count,body,owner_user_id,title,tags,answer_count, comment_count, favourite_count,body_annotation, title_annotation
+FROM Test.sof_posts WHERE post_type_id =1 and post_id>376188
+LIMIT 20000;
+
+9. ALTER Table Test.sof_answers
+	PARTITION BY RANGE (id) (
+	 PARTITION p01 VALUES LESS THAN (400000)
+	  DATA DIRECTORY = "/export/1/mysql"
+	  INDEX DIRECTORY = "/export/1/mysql",
+	 PARTITION p02 VALUES Less Than MAXVALUE
+	  DATA DIRECTORY = ""
+	  INDEX DIRECTORY = ""
+);
