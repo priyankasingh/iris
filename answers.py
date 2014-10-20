@@ -36,7 +36,7 @@ for i in range (numrows):
 		query2 = """INSERT into sof_answers
 			(post_id,parent_id,title,tags,title_annotation)
 			VALUES ('%s','%s','%s','%s','%s')
-			"""% (pid,prid,c,title,tags,tit_a)
+			"""% (pid,prid,title,tags,tit_a)
 
 		cursor.execute(query2)	
 		db.commit()
