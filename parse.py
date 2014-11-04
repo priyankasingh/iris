@@ -29,9 +29,9 @@ split -d -l 200000 posts.xml post
 $ screen -X -S [session # you want to kill] quit
 
 <?xml version="1.0" encoding="utf-8"?>
-<votes>
+<posts>
 
-</votes>
+</posts>
 
 CREATE  TABLE IF NOT EXISTS `Test`.`sof_answers` (
   `id` INT NOT NULL AUTO_INCREMENT ,
